@@ -31,7 +31,7 @@ function App() {
       searchString = 'welcome/index'
     }
 
-    fetch(`/country/${searchString.toLowerCase()}`)
+    fetch(`https://karls-rest-countries-api.onrender.com/country/${searchString.toLowerCase()}`)
       .then(response => response.json()
       ).then(data => {
           setBackendData(data)
